@@ -1,6 +1,6 @@
 <template>
   <article v-bind="$attrs" class="project-card group cursor-pointer">
-    <component :is="to ? RouterLink : 'div'" :to="to" class="block">
+    <component :is="cardComponent" v-bind="cardLinkAttrs" class="block">
       <div
         :class="[
           'project-card__media img-hover-scale overflow-hidden rounded-lg bg-surface-container-low mb-6',
@@ -18,10 +18,12 @@
             >{{ tag }}</span
           >
         </div>
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-tertiary transition-colors duration-300">
+        <h2
+          class="font-headline-md text-[28px] md:text-headline-md font-semibold leading-tight text-on-surface mb-2 group-hover:text-tertiary transition-colors duration-300"
+        >
           {{ title }}
         </h2>
-        <p class="font-body-md text-body-md text-on-surface-variant">
+        <p v-if="description" class="font-body-md text-body-md text-on-surface-variant">
           {{ description }}
         </p>
       </div>
@@ -41,7 +43,7 @@ const props = defineProps({
   },
   description: {
     type: String,
-    required: true,
+    default: '',
   },
   image: {
     type: String,
@@ -56,6 +58,10 @@ const props = defineProps({
     default: () => [],
   },
   to: {
+    type: String,
+    default: '',
+  },
+  href: {
     type: String,
     default: '',
   },
@@ -76,6 +82,18 @@ const aspectClass = computed(() => {
     default:
       return 'aspect-[16/9]'
   }
+})
+
+const cardComponent = computed(() => {
+  if (props.to) return RouterLink
+  if (props.href) return 'a'
+  return 'div'
+})
+
+const cardLinkAttrs = computed(() => {
+  if (props.to) return { to: props.to }
+  if (props.href) return { href: props.href }
+  return {}
 })
 </script>
 

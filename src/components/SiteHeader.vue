@@ -2,24 +2,21 @@
   <header
     class="site-header fixed top-0 w-full z-50 transition-all duration-500 ease-out bg-surface/80 backdrop-blur-md border-b border-outline-variant/10"
   >
-    <div class="flex items-center justify-between px-margin-desktop py-base max-w-page mx-auto">
+    <div
+      class="flex items-center justify-between px-margin-mobile md:px-margin-desktop py-base max-w-page mx-auto"
+    >
       <router-link
         to="/"
         class="flex items-center gap-2 font-headline-md text-headline-md font-bold tracking-tight text-on-surface"
       >
         <span class="font-mono text-tertiary text-sm font-normal">&lt;/&gt;</span>
-        DESIGNER PORTFOLIO
+        Marion Ma
       </router-link>
       <nav class="hidden md:flex gap-8 items-center">
         <router-link
           class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300"
           to="/"
           >Home</router-link
-        >
-        <router-link
-          class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300"
-          to="/work"
-          >Work</router-link
         >
         <router-link
           class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300"

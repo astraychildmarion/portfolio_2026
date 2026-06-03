@@ -1,18 +1,16 @@
 <script setup lang="ts">
+import SiteFooter from './components/SiteFooter.vue'
 import SiteHeader from './components/SiteHeader.vue'
 </script>
 
 <template>
   <div id="app">
     <SiteHeader />
-    <main class="pt-22">
+    <main>
       <router-view />
     </main>
+    <SiteFooter />
   </div>
 </template>
 
-<style scoped>
-main {
-  padding-top: 5.5rem;
-}
-</style>
+<style scoped></style>

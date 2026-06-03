@@ -1,158 +1,247 @@
-<script setup lang="ts">
-import ProjectCard from '@/components/ProjectCard.vue'
-</script>
-
 <template>
-  <main class="project-page px-margin-mobile md:px-margin-desktop py-28 max-w-page mx-auto w-full">
-    <section class="mb-section-gap max-w-3xl">
+  <main
+    class="project-page px-margin-mobile md:px-margin-desktop pt-28 pb-20 md:pb-24 lg:pb-28 max-w-page mx-auto w-full"
+  >
+    <section class="mb-16 md:mb-20 lg:mb-24 max-w-3xl">
       <p class="font-label-caps text-label-caps uppercase tracking-[0.24em] text-secondary mb-4">
-        Case Study B
+        Case Study
       </p>
       <h1
         class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6"
       >
-        Quiet Luxury Commerce: Elegant Product Journeys
+        Central Dashboard for an Internal Validation Platform
       </h1>
       <p class="font-body-lg text-body-lg text-on-surface-variant">
-        A deeply considered commerce experience designed to feel calm, elevated, and completely
-        focused on product storytelling.
+        Redesigned the entry experience of an internal image validation platform to make tools,
+        recent work, and key workflows easier to discover.
       </p>
     </section>
 
-    <section class="mb-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
       <div class="md:col-span-3">
         <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Overview</h2>
       </div>
-      <div class="md:col-span-9">
+      <div class="md:col-span-9 space-y-6">
         <p class="font-body-lg text-body-lg text-on-surface-variant">
-          This case study focuses on elevating online commerce for a premium lifestyle brand through
-          refined interaction design.
+          The original product did not provide a homepage. Users always landed on a pipeline
+          dashboard, while other tools were hidden behind a secondary navigation menu. This made
+          tool discovery difficult and increased navigation effort.
+        </p>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          My goal was to create a central dashboard that surfaces key tools and recent work.
         </p>
       </div>
     </section>
 
-    <section class="mb-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
       <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Challenge</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Problem</h2>
       </div>
       <div class="md:col-span-9 space-y-8">
-        <p class="font-body-md text-body-md text-on-surface-variant">
-          The previous commerce flow felt cluttered and transactional. Our challenge was to make it
-          feel more editorial, with fewer distractions and more visual calm.
-        </p>
         <div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-high">
           <img
-            class="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuACyvUk8iKWnKyjSp6_I-vD59a8msoUhwdmmktwNfhhPyTjC3ch8xMfX0LI6Uo1Nayj5apw1U4eJ1JMMRfVJRoCoWnG8Hw6we4XAgfrT0cV4SK36XEO_1ss_N9VUUq2tP2BuhVY_5zeP7kTXivC_1yTivLoAzsBRCh9n5T9qu1eLyDPeK0FqBUliu-95LcSxQqqEcwf8QT0GqP8wlaqNWxZM5wbZDQFKHyGmFF8mkTGocRXSs7hFWAGYSFxHJ7jv0zONwsOr-3Ahij4"
-            alt="Minimalist ceramic art pieces arranged on a smooth beige surface"
+            class="w-full h-full object-contain"
+            src="/i_product/i_before_homepage.png"
+            alt="Central dashboard interface for an internal validation platform"
           />
         </div>
-      </div>
-    </section>
-
-    <section class="mb-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter">
-      <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Approach</h2>
-      </div>
-      <div class="md:col-span-9 space-y-8">
-        <p class="font-body-md text-body-md text-on-surface-variant">
-          We introduced an editorial product presentation, soft motion accents, and a simpler
-          checkout path to preserve the brand's premium feel.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <span class="material-symbols-outlined text-primary text-3xl mb-4 block"
-              >visibility</span
-            >
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Product Display
+              No central entry point
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Refined product cards with restrained typography and generous spacing to improve
-              browsing focus.
+              Users landed directly on the Pipeline page.
             </p>
           </div>
           <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <span class="material-symbols-outlined text-primary text-3xl mb-4 block"
-              >shopping_bag</span
-            >
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Checkout Simplification
+              Poor discoverability
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Streamlined the purchase flow into fewer steps with clearer progress cues.
+              Other tools were hidden in a side menu.
+            </p>
+          </div>
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Workflow fragmentation
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Users frequently switched between multiple tools but had no unified overview.
+            </p>
+          </div>
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Navigation overhead
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Accessing a tool required multiple clicks.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="mb-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
       <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Design</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Process</h2>
+      </div>
+      <div class="md:col-span-9 space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Analyze navigation flow
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Mapped how users moved between Pipeline, Viewer, Dataset Manager, and Reporting tools.
+            </p>
+          </div>
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Identify common tasks
+            </h3>
+            <ul class="font-body-md text-body-md text-on-surface-variant space-y-2">
+              <li>Open a tool</li>
+              <li>Review recent simulations</li>
+              <li>Revisit existing pipelines</li>
+              <li>Access collections</li>
+            </ul>
+          </div>
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Define homepage objectives
+            </h3>
+            <ul class="font-body-md text-body-md text-on-surface-variant space-y-2">
+              <li>Surface all available tools</li>
+              <li>Highlight recent work</li>
+              <li>Reduce navigation effort</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <div class="md:col-span-3">
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Solution</h2>
       </div>
       <div class="md:col-span-9 space-y-10">
         <p class="font-body-md text-body-md text-on-surface-variant">
-          The final design pairs neutral textures with elegant, large-scale imagery and subtle
-          accents to enhance product storytelling.
+          I designed a dedicated homepage that gives users a clear starting point and brings the
+          platform's most important destinations into view.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="aspect-[21/9] rounded-xl overflow-hidden shadow-sm">
-            <img
-              class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3AN3WCrg-2rfcFZWZkpthIVMlMwz3C-UFr99rCBptmGT0UD-1BarH4E6eSULNwDDF9-lo4eU2kSeleNPT83fV0o5VCn3Q7A6gsyIO8PDLx72pvkHJqO5gEsSfYmJcQdUAeWaSIjQIGG5MJkLUR59peKGkTPRUkDmSkcgwktQ5jEtvpO0PCorzyla5jEvmjk66FgLemZ1tHqsvox138-eLNL_k60Rxvfi3cmykUCtuAuOJUuyVXhXRca6Oa9JpVdTbezFJsrRN1oPO"
-              alt="Editorial style magazine mockup with elegant typography"
-            />
-          </div>
-          <div
-            class="aspect-square rounded-xl overflow-hidden shadow-sm bg-surface-container-low flex items-center justify-center p-8"
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
+          <figure
+            class="flex items-center justify-center rounded-xl overflow-hidden bg-surface-container-high shadow-sm"
           >
-            <div class="text-center">
-              <span class="material-symbols-outlined text-tertiary text-4xl mb-4">devices</span>
-              <h4 class="font-body-lg text-body-lg text-on-surface mb-2">Responsive Design</h4>
-              <p class="font-body-md text-body-md text-on-surface-variant text-sm">
-                Designed for elegant product browsing on both mobile and desktop.
-              </p>
+            <img
+              class="w-full max-h-[420px] 2xl:max-h-[480px] object-contain"
+              src="/i_product/i_after_homepage.png"
+              alt="Internal validation platform homepage showing tool launcher cards, recent simulations, collections, and recent pipelines"
+            />
+          </figure>
+          <figure
+            class="flex items-center justify-center rounded-xl overflow-hidden bg-surface-container-high shadow-sm"
+          >
+            <img
+              class="w-full max-h-[420px] 2xl:max-h-[480px] object-contain"
+              src="/i_product/i_after_homepage_closePanel.png"
+              alt="Internal validation platform homepage with the sidebar collapsed to give more space to dashboard content"
+            />
+          </figure>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-4">
+              Tool Launcher
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="tool in tools"
+                :key="tool"
+                class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps rounded-full"
+              >
+                {{ tool }}
+              </span>
             </div>
           </div>
-          <div class="aspect-square rounded-xl overflow-hidden shadow-sm">
-            <img
-              class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA-gcVqghIsdzxFhT-s72d1ry6kClc0GXOP1hsPCRli4iRoXxKRKGGSwcsf3HJCLJO7XaBHF6nZccCvPGxoRVXxjkMYQE7oP1zPlAegbARR-A2XnQ1R1WDp1JnheSue4X85NmUx1YVNua6w5im5P2rCEmgGfqNMSz6qHGyOWUvvf7LgB4H5Dg7q9l6Z8DTZeRGZVMJQ1t7JottNGJW6m_RMFjavIMIV0GCI7XDJ1qadymgc4bM6v86RXAaTCQJ_waKsdVf9w8r3nTr"
-              alt="A sleek digital device showing a modern mobile app interface"
-            />
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Recent Simulations
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Surface recently executed simulations so users can pick up where they left off.
+            </p>
+          </div>
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Collections
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Provide shortcuts to frequently used collections.
+            </p>
+          </div>
+          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Recent Pipelines
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Allow users to continue previous work quickly.
+            </p>
+          </div>
+          <div
+            class="md:col-span-2 p-8 bg-surface-container-low rounded-xl border border-outline-variant/30"
+          >
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Persistent Sidebar
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Created a consistent navigation structure across the platform.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="mb-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
       <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Impact</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Result</h2>
       </div>
       <div class="md:col-span-9">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="border-l-2 border-tertiary pl-6">
-            <span class="font-display-lg text-display-lg text-on-surface block mb-2">+32%</span>
-            <p class="font-body-md text-body-md text-on-surface-variant">Engagement increase</p>
-          </div>
-          <div class="border-l-2 border-tertiary pl-6">
-            <span class="font-display-lg text-display-lg text-on-surface block mb-2">+27%</span>
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Improved discoverability
+            </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Add-to-cart rate improvement
+              All tools became visible immediately after login.
             </p>
           </div>
           <div class="border-l-2 border-tertiary pl-6">
-            <span class="font-display-lg text-display-lg text-on-surface block mb-2">4.8</span>
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Reduced navigation steps
+            </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Average satisfaction score
+              Users no longer needed to navigate through a tool dashboard first.
+            </p>
+          </div>
+          <div class="border-l-2 border-tertiary pl-6">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Better task continuity
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Recent work became accessible from a single location.
+            </p>
+          </div>
+          <div class="border-l-2 border-tertiary pl-6">
+            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+              Established information hierarchy
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Created a clear platform entry point.
             </p>
           </div>
         </div>
-        <p class="font-body-md text-body-md text-on-surface-variant">
-          The new experience created stronger product storytelling while preserving the premium,
-          quiet luxury mood the brand desired.
-        </p>
       </div>
     </section>
 
@@ -160,50 +249,29 @@ import ProjectCard from '@/components/ProjectCard.vue'
       <div class="md:col-span-3">
         <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Reflection</h2>
       </div>
-      <div class="md:col-span-9">
+      <div class="md:col-span-9 space-y-6">
         <p class="font-body-md text-body-md text-on-surface-variant">
-          Crafting premium commerce experiences requires restraint and strong storytelling. This
-          project reaffirmed the power of visual calm and pared-back interaction design in building
-          trust.
+          This project taught me that navigation problems are often information architecture
+          problems rather than visual design problems.
         </p>
-      </div>
-    </section>
-
-    <section class="mb-section-gap border-t border-surface-container-high pt-16">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-        <div class="md:col-span-3">
-          <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Other case studies</h2>
-        </div>
-        <div class="md:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <ProjectCard
-            to="/work/project-1"
-            image="https://lh3.googleusercontent.com/aida-public/AB6AXuBoW5GSE6hxBBJmhQRhK9N4UshMIpQ4gJSK_jr7A-HaoJVuUUlRd2-FeqFejJ4aANYuE-muMuVpvWkhQiIP9A7optIT4eChTFo0oy--KEJ0F5mBFmlCu4aW5mX7Qj4yzidGDkk3-0ENxOxZu99HySLjvYRrDOrz-wPLJOValwI-aGyxHgnwGLo1r_nqEC8heHHgfTEZWPQOuKtu0x4VXCtlMTelMFKFmgaRNiARYllOl0JknYo7FtE6PAlHjEhrwHvqc7emMw0BRtaW"
-            image-alt="Contemporary architecture interior with natural lighting and minimal furniture"
-            :tags="['UI/UX', 'Web Design']"
-            title="Aura Botanical Skincare"
-            description="A premium skincare experience reimagined with soft tonal layers, generous white space, and intuitive storytelling."
-          />
-          <ProjectCard
-            to="/work"
-            image="https://lh3.googleusercontent.com/aida-public/AB6AXuA3AN3WCrg-2rfcFZWZkpthIVMlMwz3C-UFr99rCBptmGT0UD-1BarH4E6eSULNwDDF9-lo4eU2kSeleNPT83fV0o5VCn3Q7A6gsyIO8PDLx72pvkHJqO5gEsSfYmJcQdUAeWaSIjQIGG5MJkLUR59peKGkTPRUkDmSkcgwktQ5jEtvpO0PCorzyla5jEvmjk66FgLemZ1tHqsvox138-eLNL_k60Rxvfi3cmykUCtuAuOJUuyVXhXRca6Oa9JpVdTbezFJsrRN1oPO"
-            image-alt="Editorial style magazine mockup with elegant typography"
-            :tags="['Editorial', 'Typography']"
-            title="KINFOLK Inspired Layouts"
-            description="A calm editorial system that explores typographic scale, rhythm, and premium layout detail."
-            aspect="4/3"
-          />
-        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          The most valuable change was not introducing new functionality, but creating a clear
+          starting point that helps users understand the platform.
+        </p>
       </div>
     </section>
   </main>
 </template>
 
-<style scoped>
-.img-hover-scale img {
-  transition: transform 0.7s ease;
-}
-
-.img-hover-scale:hover img {
-  transform: scale(1.05);
-}
-</style>
+<script setup lang="ts">
+const tools = [
+  'Simulation Studio',
+  'Vision Pipeline',
+  'Noise Analysis',
+  'Sharpness Evaluation',
+  'Color Validation',
+  'Image Viewer',
+  'Dataset Manager',
+  'Report Center',
+]
+</script>
