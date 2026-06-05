@@ -2,276 +2,295 @@
   <main
     class="project-page px-margin-mobile md:px-margin-desktop pt-28 pb-20 md:pb-24 lg:pb-28 max-w-page mx-auto w-full"
   >
-    <section class="mb-16 md:mb-20 lg:mb-24 max-w-3xl">
+    <!-- Hero -->
+    <section class="mb-20 md:mb-28 lg:mb-32 max-w-4xl">
       <p class="font-label-caps text-label-caps uppercase tracking-[0.24em] text-secondary mb-4">
         Case Study
       </p>
+
       <h1
         class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6"
       >
-        Central Dashboard for an Internal Validation Platform
+        Designing a Homepage for an Internal SaaS Platform
       </h1>
-      <p class="font-body-lg text-body-lg text-on-surface-variant">
-        Redesigned the entry experience of an internal image validation platform to make tools,
-        recent work, and key workflows easier to discover.
+
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+        The platform had no homepage. Users landed on a pipeline list with no overview of what else
+        the product could do. I designed a central dashboard that surfaced tools, recent work, and
+        collections in one place.
       </p>
     </section>
 
-    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <!-- Overview -->
+    <section class="mb-20 md:mb-28 lg:mb-32 grid grid-cols-1 md:grid-cols-12 gap-gutter">
       <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Overview</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Overview</h2>
       </div>
-      <div class="md:col-span-9 space-y-6">
+
+      <div class="md:col-span-9 space-y-6 max-w-3xl">
         <p class="font-body-lg text-body-lg text-on-surface-variant">
-          The original product did not provide a homepage. Users always landed on a pipeline
-          dashboard, while other tools were hidden behind a secondary navigation menu. This made
-          tool discovery difficult and increased navigation effort.
+          The original product did not provide a true homepage. Users landed directly on a pipeline
+          dashboard, while other important tools were placed inside a secondary navigation menu.
         </p>
+
         <p class="font-body-md text-body-md text-on-surface-variant">
-          My goal was to create a central dashboard that surfaces key tools and recent work.
+          The missing homepage wasn't just a navigation gap. It meant users never had a complete
+          picture of the platform.
         </p>
       </div>
     </section>
 
-    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <!-- Problem -->
+    <section class="mb-20 md:mb-28 lg:mb-32 grid grid-cols-1 md:grid-cols-12 gap-gutter">
       <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Problem</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Problem</h2>
       </div>
-      <div class="md:col-span-9 space-y-8">
-        <div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-high">
-          <img
-            class="w-full h-full object-contain"
-            src="/i_product/i_before_homepage.png"
-            alt="Central dashboard interface for an internal validation platform"
-          />
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              No central entry point
-            </h3>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Users landed directly on the Pipeline page.
-            </p>
-          </div>
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Poor discoverability
-            </h3>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Other tools were hidden in a side menu.
-            </p>
-          </div>
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Workflow fragmentation
-            </h3>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Users frequently switched between multiple tools but had no unified overview.
-            </p>
-          </div>
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Navigation overhead
-            </h3>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Accessing a tool required multiple clicks.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
-      <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Process</h2>
-      </div>
-      <div class="md:col-span-9 space-y-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Analyze navigation flow
-            </h3>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Mapped how users moved between Pipeline, Viewer, Dataset Manager, and Reporting tools.
-            </p>
-          </div>
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Identify common tasks
-            </h3>
-            <ul class="font-body-md text-body-md text-on-surface-variant space-y-2">
-              <li>Open a tool</li>
-              <li>Review recent simulations</li>
-              <li>Revisit existing pipelines</li>
-              <li>Access collections</li>
-            </ul>
-          </div>
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Define homepage objectives
-            </h3>
-            <ul class="font-body-md text-body-md text-on-surface-variant space-y-2">
-              <li>Surface all available tools</li>
-              <li>Highlight recent work</li>
-              <li>Reduce navigation effort</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
-      <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Solution</h2>
-      </div>
       <div class="md:col-span-9 space-y-10">
-        <p class="font-body-md text-body-md text-on-surface-variant">
-          I designed a dedicated homepage that gives users a clear starting point and brings the
-          platform's most important destinations into view.
-        </p>
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-          <figure
-            class="flex items-center justify-center rounded-xl overflow-hidden bg-surface-container-high shadow-sm"
-          >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <figure class="rounded-xl overflow-hidden bg-surface-container-high shadow-sm">
             <img
-              class="w-full max-h-[420px] 2xl:max-h-[480px] object-contain"
-              src="/i_product/i_after_homepage.png"
-              alt="Internal validation platform homepage showing tool launcher cards, recent simulations, collections, and recent pipelines"
+              class="w-full object-contain"
+              src="/i_product/i_before_homepage.png"
+              alt="Before state showing a pipeline-centered dashboard with tools hidden in a side menu"
             />
           </figure>
-          <figure
-            class="flex items-center justify-center rounded-xl overflow-hidden bg-surface-container-high shadow-sm"
-          >
-            <img
-              class="w-full max-h-[420px] 2xl:max-h-[480px] object-contain"
-              src="/i_product/i_after_homepage_closePanel.png"
-              alt="Internal validation platform homepage with the sidebar collapsed to give more space to dashboard content"
-            />
-          </figure>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-4">
-              Tool Launcher
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <span
-                v-for="tool in tools"
-                :key="tool"
-                class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps rounded-full"
-              >
-                {{ tool }}
-              </span>
+
+          <div class="space-y-6">
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              The homepage functioned more like a pipeline repository than a platform entry point.
+              Users could see saved pipelines, but they could not quickly understand what actions
+              were available across the product.
+            </p>
+
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Frequently used tools were visually deprioritized, recent work was not surfaced, and
+              the interface gave users little support for task continuity.
+            </p>
+          </div>
+
+          <div class="lg:col-span-2 grid grid-cols-1 gap-8 pt-2">
+            <div>
+              <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                Tools were hidden behind navigation
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Users had to open a secondary menu before discovering available tools.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                The page was organized around stored objects
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Pipeline cards dominated the page, even though users often came in to start a task.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
+                Recent work had no clear home
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Users had to remember where they left off instead of being guided back into their
+                workflow.
+              </p>
             </div>
           </div>
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="mb-20 md:mb-28 lg:mb-32 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <div class="md:col-span-3">
+        <h2 class="font-headline-md text-headline-md text-on-surface">Solution</h2>
+      </div>
+
+      <div class="md:col-span-9 space-y-10">
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+          I introduced a dedicated central dashboard that surfaces the platform’s major
+          destinations: tools, recent simulations, collections, and pipelines.
+        </p>
+
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+          <figure class="space-y-4">
+            <p class="font-label-caps text-label-caps uppercase tracking-[0.18em] text-secondary">
+              Before
+            </p>
+            <div class="rounded-xl overflow-hidden bg-surface-container-high shadow-sm">
+              <img
+                class="w-full object-contain"
+                src="/i_product/i_before_homepage.png"
+                alt="Before state showing a pipeline-centered dashboard"
+              />
+            </div>
+          </figure>
+
+          <figure class="space-y-4">
+            <p class="font-label-caps text-label-caps uppercase tracking-[0.18em] text-secondary">
+              After
+            </p>
+            <div class="rounded-xl overflow-hidden bg-surface-container-high shadow-sm">
+              <img
+                class="w-full object-contain"
+                src="/i_product/i_after_homepage.png"
+                alt="After state showing a central dashboard with tools, recent simulations, collections, and pipelines"
+              />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Decisions -->
+    <section class="mb-20 md:mb-28 lg:mb-32 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <div class="md:col-span-3">
+        <h2 class="font-headline-md text-headline-md text-on-surface">Design Decisions</h2>
+      </div>
+
+      <div class="md:col-span-9 space-y-10 max-w-3xl">
+        <div class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2">
+          <p class="font-label-caps text-label-caps text-secondary pt-1">01</p>
+          <div>
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Recent Simulations
+              Reframed the homepage as a task launcher
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Surface recently executed simulations so users can pick up where they left off.
+              I placed all major tools at the top so users could immediately understand what they
+              could do inside the platform.
             </p>
           </div>
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+        </div>
+
+        <div class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2">
+          <p class="font-label-caps text-label-caps text-secondary pt-1">02</p>
+          <div>
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Collections
+              Separated navigation from workspace content
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Provide shortcuts to frequently used collections.
+              I moved product navigation into a persistent sidebar, allowing the main content area
+              to focus on dashboard information.
             </p>
           </div>
-          <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/30">
+        </div>
+
+        <div class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2">
+          <p class="font-label-caps text-label-caps text-secondary pt-1">03</p>
+          <div>
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Recent Pipelines
+              Created a clear information hierarchy
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Allow users to continue previous work quickly.
+              Tools, recent simulations, collections, and pipelines were ordered by how users
+              typically re-enter their work.
             </p>
           </div>
-          <div
-            class="md:col-span-2 p-8 bg-surface-container-low rounded-xl border border-outline-variant/30"
-          >
+        </div>
+
+        <div class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-2">
+          <p class="font-label-caps text-label-caps text-secondary pt-1">04</p>
+          <div>
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Persistent Sidebar
+              Preserved access to pipelines without letting them dominate the page
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Created a consistent navigation structure across the platform.
+              Pipelines remained accessible, but they became part of a broader workspace instead of
+              defining the entire homepage.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="mb-16 md:mb-20 lg:mb-24 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <!-- Result -->
+    <section class="mb-20 md:mb-28 lg:mb-32 grid grid-cols-1 md:grid-cols-12 gap-gutter">
       <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Result</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Result</h2>
       </div>
-      <div class="md:col-span-9">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="md:col-span-9 space-y-8 max-w-3xl">
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          The redesign transformed the entry page from a single-purpose pipeline list into a central
+          workspace that supports discovery, navigation, and task continuity.
+        </p>
+
+        <div class="space-y-6">
           <div class="border-l-2 border-tertiary pl-6">
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
               Improved discoverability
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              All tools became visible immediately after login.
+              All major tools became visible immediately from the homepage.
             </p>
           </div>
+
           <div class="border-l-2 border-tertiary pl-6">
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Reduced navigation steps
+              Reduced navigation overhead
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Users no longer needed to navigate through a tool dashboard first.
+              Users no longer needed to search through a secondary menu before starting work.
             </p>
           </div>
+
           <div class="border-l-2 border-tertiary pl-6">
             <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Better task continuity
+              Strengthened task continuity
             </h3>
             <p class="font-body-md text-body-md text-on-surface-variant">
-              Recent work became accessible from a single location.
-            </p>
-          </div>
-          <div class="border-l-2 border-tertiary pl-6">
-            <h3 class="font-body-lg text-body-lg font-semibold text-on-surface mb-2">
-              Established information hierarchy
-            </h3>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Created a clear platform entry point.
+              Recent simulations and collections gave users a faster way to resume previous work.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <!-- Reflection -->
+    <section class="mb-20 md:mb-28 lg:mb-32 grid grid-cols-1 md:grid-cols-12 gap-gutter">
       <div class="md:col-span-3">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Reflection</h2>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Reflection</h2>
       </div>
-      <div class="md:col-span-9 space-y-6">
+
+      <div class="md:col-span-9 space-y-6 max-w-3xl">
         <p class="font-body-md text-body-md text-on-surface-variant">
           This project taught me that navigation problems are often information architecture
-          problems rather than visual design problems.
+          problems. The main issue was not that users needed more features, but that the platform
+          did not clearly explain where work should begin.
         </p>
+
         <p class="font-body-md text-body-md text-on-surface-variant">
-          The most valuable change was not introducing new functionality, but creating a clear
-          starting point that helps users understand the platform.
+          The deeper issue was that the platform had grown tool by tool, and no one had designed the
+          whole. A homepage forced that question.
         </p>
       </div>
     </section>
+
+    <section class="border-t border-outline-variant/40 pt-10">
+      <router-link
+        class="group flex flex-col md:flex-row md:items-end md:justify-between gap-6 text-on-surface"
+        to="/work/project-1"
+      >
+        <div>
+          <p
+            class="font-label-caps text-label-caps uppercase tracking-[0.24em] text-secondary mb-4"
+          >
+            Next case study
+          </p>
+          <h2
+            class="font-headline-md text-headline-md group-hover:text-tertiary transition-colors duration-300"
+          >
+            Dataset Comparison Tool Redesign
+          </h2>
+        </div>
+        <span
+          class="material-symbols-outlined text-[28px] text-tertiary transition-transform duration-300 group-hover:translate-x-1"
+          aria-hidden="true"
+          >arrow_forward</span
+        >
+      </router-link>
+    </section>
   </main>
 </template>
-
-<script setup lang="ts">
-const tools = [
-  'Simulation Studio',
-  'Vision Pipeline',
-  'Noise Analysis',
-  'Sharpness Evaluation',
-  'Color Validation',
-  'Image Viewer',
-  'Dataset Manager',
-  'Report Center',
-]
-</script>

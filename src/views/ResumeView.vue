@@ -32,20 +32,6 @@ const professionalExperience = [
   },
 ]
 
-const education = [
-  {
-    role: 'MSc Human-Computer Interaction',
-    company: 'University College Dublin',
-    date: '2026 — 2027',
-  },
-  {
-    role: 'B.A. Slavic Languages and Literatures',
-    company: 'National Chengchi University',
-    date: '2007 — 2013',
-    description: 'Minor in Philosophy — logic, semiotics, and philosophy of language.',
-  },
-]
-
 const skillGroups = [
   {
     title: 'Frontend',
@@ -68,14 +54,6 @@ const skillGroups = [
     variant: 'outlined',
   },
 ]
-
-const certifications = [
-  {
-    role: 'UI/UX Designer Training Program',
-    company: 'Institute for Information Industry',
-    date: '2016',
-  },
-]
 </script>
 
 <template>
@@ -84,25 +62,17 @@ const certifications = [
   >
     <section class="mb-16 md:mb-20 lg:mb-24">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
-        <div class="md:col-span-8">
+        <div class="md:col-span-9">
           <h1
             class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6"
           >
             Resume
           </h1>
           <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-            Frontend engineer with 6 years of experience building and refactoring enterprise
+            Frontend engineer with 7 years of experience building and refactoring enterprise
             interfaces. Currently pursuing MSc HCI at University College Dublin — deepening the
             human side of what I build.
           </p>
-        </div>
-        <div class="md:col-span-4 flex md:justify-end mt-8 md:mt-0">
-          <a
-            class="inline-flex items-center gap-2 px-8 py-4 bg-tertiary text-on-tertiary rounded-DEFAULT hover:bg-on-tertiary-container transition-colors duration-300"
-            href="#"
-          >
-            <span class="font-label-caps text-label-caps uppercase">Download PDF ↓</span>
-          </a>
         </div>
       </div>
     </section>
@@ -122,27 +92,6 @@ const certifications = [
             :company="item.company"
             :date="item.date"
             :description="item.description"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-16 md:mb-20 lg:mb-24 border-t border-surface-container-high pt-12 md:pt-16">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-        <div class="col-span-1 md:col-span-4 mb-8 md:mb-0">
-          <h2 class="font-headline-md text-headline-md text-on-surface sticky top-[100px]">
-            Education
-          </h2>
-        </div>
-        <div class="col-span-1 md:col-span-8 flex flex-col gap-10 md:gap-12">
-          <ResumeExperienceItem
-            v-for="item in education"
-            :key="`${item.company}-${item.date}`"
-            :role="item.role"
-            :company="item.company"
-            :date="item.date"
-            :description="item.description"
-            education
           />
         </div>
       </div>
@@ -173,26 +122,6 @@ const certifications = [
               </span>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="border-t border-surface-container-high pt-12 md:pt-16">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-        <div class="col-span-1 md:col-span-4 mb-8 md:mb-0">
-          <h2 class="font-headline-md text-headline-md text-on-surface sticky top-[100px]">
-            Certifications
-          </h2>
-        </div>
-        <div class="col-span-1 md:col-span-8 flex flex-col gap-10 md:gap-12">
-          <ResumeExperienceItem
-            v-for="item in certifications"
-            :key="`${item.company}-${item.date}`"
-            :role="item.role"
-            :company="item.company"
-            :date="item.date"
-            education
-          />
         </div>
       </div>
     </section>
