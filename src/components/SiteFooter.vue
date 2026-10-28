@@ -27,6 +27,13 @@
           >
           <a
             class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary underline underline-offset-4 transition-all"
+            href="https://github.com/astraychildmarion"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary underline underline-offset-4 transition-all"
             href="mailto:allidareused@gmail.com"
             >Email</a
           >

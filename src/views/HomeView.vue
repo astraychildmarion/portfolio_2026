@@ -27,7 +27,16 @@ const featuredProjects = [
     tags: ['UI / UX Refactor', 'Dart', 'Angular'],
     title: 'Central Dashboard for an Internal Validation Platform',
     aspect: '4/3',
-    class: 'md:mt-16 lg:mt-24',
+    class: '',
+  },
+  {
+    to: '/work/pokemon-care-lobby',
+    image: '/pet_shop/pokemon_pet.png',
+    imageAlt: 'Laptop displaying the Pokémon Care Lobby adoption interface',
+    tags: ['React', 'UX Design', 'TDD', 'AI-Assisted Development'],
+    title: 'Pokémon Care Lobby',
+    aspect: '4/3',
+    class: '',
   },
 ]
 </script>
@@ -35,48 +44,44 @@ const featuredProjects = [
 <template>
   <main class="home-page">
     <section
-      class="hero-section min-h-[520px] md:min-h-[600px] px-margin-mobile md:px-margin-desktop py-14 md:py-16 max-w-page mx-auto flex flex-col justify-center"
+      class="hero-section px-margin-mobile md:px-margin-desktop pt-36 pb-20 md:pt-44 md:pb-28 max-w-page mx-auto"
     >
-      <div class="max-w-5xl">
+      <div class="max-w-3xl">
         <span
-          class="font-mono text-sm uppercase tracking-[0.32em] text-tertiary mb-6 block opacity-80"
+          class="font-mono text-sm uppercase tracking-[0.32em] text-tertiary mb-7 block opacity-80"
         >
           UX Engineer
         </span>
-        <h1
-          class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 md:mb-8 leading-[1.05]"
-        >
-          Complexity is the problem.<br />
-          <span class="text-tertiary">Clarity is what I build.</span>
+        <h1 class="font-headline-md text-[32px] md:text-[44px] leading-tight text-on-surface mb-6">
+          I’m Marion, a software engineer with 7+ years of experience.
         </h1>
-        <div
-          class="space-y-4 font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 md:mb-12"
-        >
-          <p>
-            I'm Marion. Seven years as a frontend engineer, now studying HCI. I design interfaces
-            that actually hold up when they hit the codebase.
-          </p>
+        <div class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-9">
+          <p>I design thoughtful interfaces and bring them to life through code.</p>
         </div>
-        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-8">
+        <div>
           <a
-            class="inline-flex items-center gap-2 font-body-md text-body-md text-on-primary bg-primary px-8 py-4 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-sm hover:shadow-md"
+            class="group inline-flex items-center gap-2 font-body-md text-body-md text-primary hover:text-tertiary transition-colors duration-300"
             href="#work"
           >
             View My Work
+            <span
+              class="material-symbols-outlined text-[19px] transition-transform duration-300 group-hover:translate-y-0.5"
+              aria-hidden="true"
+              >arrow_downward</span
+            >
           </a>
         </div>
       </div>
     </section>
 
     <section
-      class="pt-12 pb-20 md:pt-16 md:pb-24 lg:pt-20 lg:pb-28 px-margin-mobile md:px-margin-desktop max-w-page mx-auto bg-surface-container-lowest"
+      class="py-20 md:py-24 px-margin-mobile md:px-margin-desktop max-w-page mx-auto border-t border-outline-variant/30"
       id="work"
     >
-      <div class="mb-10 md:mb-14">
-        <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Featured Work</h2>
-        <div class="w-12 h-px bg-outline-variant"></div>
+      <div class="mb-10 md:mb-12">
+        <h2 class="font-headline-md text-headline-md text-on-surface">Featured Work</h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-gutter">
         <ProjectCard
           v-for="project in featuredProjects"
           :key="project.title"
@@ -92,7 +97,7 @@ const featuredProjects = [
     </section>
 
     <section
-      class="py-12 md:py-16 lg:py-20 px-margin-mobile md:px-margin-desktop max-w-page mx-auto"
+      class="py-16 md:py-20 px-margin-mobile md:px-margin-desktop max-w-page mx-auto border-t border-outline-variant/30"
     >
       <div class="mb-6 md:mb-8">
         <h2 class="font-headline-md text-[24px] text-on-surface">Technical Excellence</h2>

@@ -2,32 +2,29 @@
   <main
     class="about-page px-margin-mobile md:px-margin-desktop pt-28 pb-20 md:pb-24 lg:pb-28 max-w-page mx-auto w-full"
   >
-    <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center min-h-[620px]">
-      <div class="md:col-span-6 md:col-start-2">
-        <p class="font-label-caps text-label-caps uppercase tracking-[0.24em] text-secondary mb-4">
-          Marion Ma
-        </p>
-        <h1
-          class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8"
-        >
-          I'm Marion. I build interfaces, and I design them too.
-        </h1>
+    <h1 class="sr-only">About</h1>
+    <section
+      class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-gutter items-center py-6 md:py-10"
+    >
+      <div class="md:col-span-5 md:col-start-2 max-w-xl">
         <div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
           <p>
-            Frontend engineer with 7 years across Angular, Vue, and React. I've spent most of that
-            time working close enough to designers to understand what they're trying to do, and close
-            enough to the codebase to know what will actually ship.
+            My experience spans the product development process, from understanding user needs and
+            defining requirements to designing interfaces, improving workflows, and delivering
+            functional products.
           </p>
           <p>
-            Now at University College Dublin studying HCI, learning to ask better questions before
-            the design starts.
+            I’m currently pursuing an MSc in Human-Computer Interaction at University College
+            Dublin, focusing on user research, interaction design, and usability evaluation.
           </p>
         </div>
       </div>
-      <div class="md:col-span-4 md:col-start-9 order-first md:order-last">
-        <div class="w-full max-w-sm md:max-w-none mx-auto rounded-xl overflow-hidden shadow-sm">
+      <div class="md:col-span-5 md:col-start-7 order-first md:order-last">
+        <div
+          class="w-full max-w-md md:w-89.75 md:h-108 mx-auto rounded-xl overflow-hidden shadow-sm"
+        >
           <img
-            class="w-full h-auto"
+            class="w-full h-auto md:h-full md:object-cover md:object-top"
             src="/portfolio_person.jpeg"
             alt="Portrait of Marion Ma"
           />
@@ -35,9 +32,11 @@
       </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-16 md:py-20 lg:py-24">
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-8 md:py-10 lg:py-12">
       <div class="md:col-span-10 md:col-start-2">
-        <div class="max-w-4xl divide-y divide-outline-variant/40 border-y border-outline-variant/40">
+        <div
+          class="max-w-4xl divide-y divide-outline-variant/40 border-y border-outline-variant/40"
+        >
           <div class="grid grid-cols-1 md:grid-cols-12 gap-4 py-8">
             <h2 class="md:col-span-4 font-headline-md text-headline-md text-on-surface">
               Intent over Decoration

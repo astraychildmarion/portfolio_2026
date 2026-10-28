@@ -3,6 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import WorkView from '@/views/WorkView.vue'
 import Project1View from '@/views/Project1View.vue'
 import Project2View from '@/views/Project2View.vue'
+import PokemonCareLobbyView from '@/views/PokemonCareLobbyView.vue'
 import AboutView from '@/views/AboutView.vue'
 import ResumeView from '@/views/ResumeView.vue'
 
@@ -42,6 +43,11 @@ const router = createRouter({
       path: '/work/project-2',
       name: 'Project2',
       component: Project2View,
+    },
+    {
+      path: '/work/pokemon-care-lobby',
+      name: 'PokemonCareLobby',
+      component: PokemonCareLobbyView,
     },
     {
       path: '/about',

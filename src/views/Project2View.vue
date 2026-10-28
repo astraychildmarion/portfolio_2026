@@ -271,7 +271,7 @@
     <section class="border-t border-outline-variant/40 pt-10">
       <router-link
         class="group flex flex-col md:flex-row md:items-end md:justify-between gap-6 text-on-surface"
-        to="/work/project-1"
+        to="/work/pokemon-care-lobby"
       >
         <div>
           <p
@@ -282,7 +282,7 @@
           <h2
             class="font-headline-md text-headline-md group-hover:text-tertiary transition-colors duration-300"
           >
-            Dataset Comparison Tool Redesign
+            Pokémon Care Lobby
           </h2>
         </div>
         <span
